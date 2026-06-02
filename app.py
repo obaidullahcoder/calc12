@@ -1,16 +1,21 @@
 ﻿import streamlit as st
 
-import streamlit as st
-
-# Update your page config with your custom title and description
+# 1. Page Configuration & Custom Title for Google Search
 st.set_page_config(
-    page_title="Calc12 - The Best Free Online Calculator", # This becomes the blue link on Google
-    page_icon="🧮",
+    page_title="Calc12 - The Best Free Online Calculator", 
+    page_icon="🧮", 
     layout="centered"
 )
 
+# Google Site Verification Tag (Hidden from users, visible to Google's bots)
+st.markdown('<meta name="google-site-verification" content="HEWrqInxrBZAR2jfcNZDuhtmZDzKp8krahR4ahKfj0k" />', unsafe_allow_html=True)
+
 # Custom styling to color buttons and style the calculator frame
 st.markdown("""
+<style>
+
+
+
 <style>
     /* Main wrapper to mimic real physical frame */
     div.stMainBlockContainer {
