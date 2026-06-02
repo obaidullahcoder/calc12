@@ -1,7 +1,13 @@
 ﻿import streamlit as st
 
-# 1. Page Configuration & Custom CSS to match Screenshot (1).png
-st.set_page_config(page_title="Online Calculator", page_icon="🧮", layout="centered")
+import streamlit as st
+
+# Update your page config with your custom title and description
+st.set_page_config(
+    page_title="Calc12 - The Best Free Online Calculator", # This becomes the blue link on Google
+    page_icon="🧮",
+    layout="centered"
+)
 
 # Custom styling to color buttons and style the calculator frame
 st.markdown("""
